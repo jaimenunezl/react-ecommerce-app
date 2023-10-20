@@ -1,10 +1,10 @@
-import { useRoutes, BrowserRouter } from 'react-router-dom'
+import { useRoutes, BrowserRouter } from 'react-router-dom';
 
-import { Home, MyAccount, NotFound } from '../../Pages'
-import { Navbar } from '../../Components'
-import { StoreProvider } from '../../Context'
+import { Home, MyAccount, NotFound, MyOrders, MyOrder } from '../../Pages';
+import { Navbar } from '../../Components';
+import { StoreProvider } from '../../Context';
 
-import './App.css'
+import './App.css';
 
 const AppRoutes = () => {
   return useRoutes([
@@ -13,15 +13,31 @@ const AppRoutes = () => {
       element: <Home />,
     },
     {
-      path: '/my-account',
+      path: '/mi-cuenta',
       element: <MyAccount />,
+    },
+    {
+      path: '/orden/ultima',
+      element: <MyOrder />,
+    },
+    {
+      path: '/orden/:id',
+      element: <MyOrder />,
+    },
+    {
+      path: '/mis-ordenes',
+      element: <MyOrders />,
+    },
+    {
+      path: '/:category',
+      element: <Home />,
     },
     {
       path: '/*',
       element: <NotFound />,
     },
-  ])
-}
+  ]);
+};
 
 function App() {
   return (
@@ -31,7 +47,7 @@ function App() {
         <AppRoutes />
       </BrowserRouter>
     </StoreProvider>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,12 +1,12 @@
-import { useContext } from 'react'
-import { NavLink } from 'react-router-dom'
+import { useContext } from 'react';
+import { NavLink } from 'react-router-dom';
 
-import { StoreContext } from '../../Context'
+import { StoreContext } from '../../Context';
 
 export default function Navbar() {
-  const { cartCount } = useContext(StoreContext)
+  const { cartCount } = useContext(StoreContext);
 
-  const activeItem = 'underline underline-offset-4 font-semibold'
+  const activeItem = 'underline underline-offset-4 font-semibold';
 
   return (
     <nav className="flex justify-between fixed z-10 w-full py-5 px-5 items-center top-0 bg-white">
@@ -55,7 +55,7 @@ export default function Navbar() {
             to="/mis-ordenes"
             className={({ isActive }) => (isActive ? activeItem : null)}
           >
-            Mis Ordenes
+            Mis Órdenes
           </NavLink>
         </li>
         <li>
@@ -79,5 +79,5 @@ export default function Navbar() {
         </li>
       </ul>
     </nav>
-  )
+  );
 }
