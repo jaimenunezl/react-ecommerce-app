@@ -14,7 +14,9 @@ export default function MyOrders() {
       </header>
       <main className="mt-5">
         {orders.length > 0 ? (
-          orders.map((order) => <OrdersCard key={order.id} data={order} />)
+          orders.map((order) => (
+            <OrdersCard key={order.metadata.id} data={order} />
+          ))
         ) : (
           <p className="text-center mt-2">No hay órdenes</p>
         )}

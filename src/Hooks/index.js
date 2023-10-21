@@ -1,1 +1,2 @@
-export { LocalStorage } from './LocalStorage.hook';
+export * from './Account.hook';
+export * from './LocalStorage.hook';

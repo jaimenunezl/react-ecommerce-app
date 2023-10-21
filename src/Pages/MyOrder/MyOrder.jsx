@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import { StoreContext } from '../../Context';
 import { Layout, OrderCard } from '../../Components';
@@ -10,7 +10,9 @@ export default function MyOrder() {
   const { orders } = useContext(StoreContext);
 
   let order = null;
-  const orderId = window.location.pathname.split('/').slice(-1)[0];
+  const { id: orderId } = useParams();
+
+  console.log(orderId);
 
   if (orderId === 'ultima') {
     order = orders.slice(-1);

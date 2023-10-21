@@ -1,21 +1,21 @@
-import { useContext } from 'react'
+import { useContext } from 'react';
 
-import { StoreContext } from '../../Context'
+import { StoreContext } from '../../Context';
 
-import { XMarkIcon } from '@heroicons/react/24/solid'
+import { XMarkIcon } from '@heroicons/react/24/solid';
 
 export default function ProductDetail() {
   const { isProductDetailOpen, productActive, handleProductDetailVisibility } =
-    useContext(StoreContext)
+    useContext(StoreContext);
 
   const handleCloseProductDetail = () => {
-    handleProductDetailVisibility(false)
-  }
+    handleProductDetailVisibility(false);
+  };
 
   return (
     <>
       {isProductDetailOpen && (
-        <aside className="w-[300px] flex flex-col p-4 fixed bg-white top-[69px] right-0 h-[calc(100vh-68px)] border border-black rounded-lg">
+        <aside className="w-[300px] flex flex-col p-4 fixed bg-white top-[68px] right-0 h-[calc(100vh-68px)] border border-black rounded-lg">
           <div>
             <header className="flex justify-between">
               <span className="text-lg">Detalle</span>
@@ -41,5 +41,5 @@ export default function ProductDetail() {
         </aside>
       )}
     </>
-  )
+  );
 }
