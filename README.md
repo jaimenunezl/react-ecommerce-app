@@ -30,4 +30,4 @@ npm run deploy
 
 ## Live view
 
-[Task APP](https://jaimenunezl.github.io/react-ecommerce-app/)
+[Store APP](https://jaimenunezl.github.io/react-ecommerce-app/)
