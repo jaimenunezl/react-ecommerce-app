@@ -1,8 +1,33 @@
-# React + Vite
+# Store App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The application shows a list of products, which can be added to the cart and then proceed to checkout
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js 18.x
+
+## Tools
+
+- [vite](https://vitejs.dev/)
+
+## Installation
+
+```bash
+npm install
+```
+
+## Usage
+
+```bash
+npm run dev
+```
+
+## Deploy
+
+```bash
+npm run deploy
+```
+
+## Live view
+
+[Task APP](https://jaimenunezl.github.io/react-ecommerce-app/)
