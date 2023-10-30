@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 import { Navbar } from '../../Components';
 import { StoreProvider } from '../../Context';
@@ -9,10 +9,10 @@ import './App.css';
 function App() {
   return (
     <StoreProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <AppRoutes />
-      </BrowserRouter>
+      </HashRouter>
     </StoreProvider>
   );
 }
